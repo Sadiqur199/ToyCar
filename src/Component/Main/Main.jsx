@@ -5,6 +5,7 @@ import Banner from '../Pages/Banner/Banner';
 import Products from '../Pages/Products/Products';
 import Client from '../Pages/Client/Client';
 import Gallery from '../Pages/Gallery/Gallery';
+import Delevery from '../Pages/Delevery/Delevery';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <Products></Products>
       <Gallery></Gallery>
       <Client></Client>
+      <Delevery></Delevery>
       <Footer></Footer>
     </div>
   );
