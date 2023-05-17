@@ -1,5 +1,6 @@
 import React from 'react';
 import carLogo from '../../../assets/carlogo.png'
+import { FaFacebook, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
@@ -28,10 +29,10 @@ const Footer = () => {
           <a className="link link-hover">Address: Mirpur-2</a>
         </div>
         <div>
-          <span className="footer-title">Legal</span>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Disclaimer of Liability</a>
-          <a className="link link-hover">External Links</a>
+          <span className="footer-title">Social Link</span>
+          <a className="link link-hover "><FaFacebook></FaFacebook></a>
+          <a className="link link-hover"><FaWhatsappSquare></FaWhatsappSquare></a>
+          <a className="link link-hover"><FaInstagramSquare></FaInstagramSquare></a>
         </div>
       </footer>
       <div className='mt-4 text-center'>
