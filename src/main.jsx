@@ -12,6 +12,7 @@ import AuthProvider from './Provider/AuthProvider.jsx';
 import Registation from './Component/Pages/Registation/Registation.jsx';
 import LayOut from './Component/Main/LayOut.jsx';
 import Products from './Component/Pages/Products/Products.jsx';
+import Blog from './Component/Pages/Blog/Blog.jsx';
 
 const router = createBrowserRouter([  
   {
@@ -27,14 +28,14 @@ const router = createBrowserRouter([
         element:<Registation></Registation>
       },
       {
-      path:'products',
-      element:<Products></Products>,
-      loader:()=>fetch('http://localhost:5000/products')
+        path:'blog',
+        element:<Blog></Blog>
       },
       {
         path:'/',
         element:<LayOut></LayOut>
       },
+
     ],
     
   },
