@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import carLogo from '../../../assets/carlogo.png'
+import { AuthContext } from '../../../Provider/AuthProvider';
 
 const Header = () => {
-
-  const user = 'sadiq';
+  const { user, logOut } = useContext(AuthContext)
+  // const handelLogout = () =>{
+  //   logOut()
+  //   .then()
+  //   .catch(error=>console.log(error.message))
+  // }
+  const handelLogout = () => {
+      logOut()
+      .then()
+      .catch(error=>console.log(error.message))
+  }
 
   const navItems = <>
     <li><Link to='/'>Home</Link></li>
@@ -16,7 +26,7 @@ const Header = () => {
       <>
         <li><Link to='/services'>My Toys</Link></li>
         <li><Link to='/services'> Add A Toy</Link></li>
-        <li> <button>Log out</button> </li>
+        <li> <button onClick={handelLogout}>Log out</button> </li>
       </>
       :
       <li><Link to='/login'>Login</Link></li>
@@ -45,7 +55,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <img className='mt-2 me-2 rounded' style={{ height: "35px", width: '35px' }} title={user.displayName} src={user.photoURL ? user.photoURL : <FaUserCircle></FaUserCircle>} alt="" />
+          <img className='mt-2 me-2 rounded' style={{ height: "35px", width: '35px' }} title={user?.displayName} src={user?.photoURL ? user.photoURL : ''} alt="" />
           :
           <Link href="#deets" className='mt-1'>
             <FaUserCircle style={{ fontSize: '2rem' }} />

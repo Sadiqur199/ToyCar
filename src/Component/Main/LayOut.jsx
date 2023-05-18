@@ -1,21 +1,24 @@
 import React from 'react';
 import Header from '../SharedPage/Header/Header';
+import { Outlet } from 'react-router-dom';
+import Login from '../Pages/Login/Login';
 import Footer from '../SharedPage/Footer/Footer';
 import Banner from '../Pages/Banner/Banner';
 import Products from '../Pages/Products/Products';
-import Client from '../Pages/Client/Client';
 import Gallery from '../Pages/Gallery/Gallery';
+import Client from '../Pages/Client/Client';
 import Delevery from '../Pages/Delevery/Delevery';
-import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+const LayOut = () => {
   return (
     <div>
-      <Header></Header>
-      <Outlet></Outlet>
-      <Footer></Footer>
+      <Banner></Banner>
+      <Products></Products>
+      <Gallery></Gallery>
+      <Client></Client>
+      <Delevery></Delevery>
     </div>
   );
 };
 
-export default Main;
+export default LayOut;
