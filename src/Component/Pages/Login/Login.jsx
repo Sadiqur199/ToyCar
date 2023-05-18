@@ -18,7 +18,6 @@ const Login = () => {
     const form = event.target
     const email = form.email.value
     const password = form.password.value
-    // console.log(name,photo,email,password)
     singIn(email, password)
       .then(result => {
         const user = result.user
@@ -34,11 +33,11 @@ const Login = () => {
 
   }
   return (
-    <div>
+    <div className=''>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
+            <div className="card-body p-16 bg-sky-200 ">
               <div className='text-success'>
               {success}
               </div>

@@ -23,8 +23,8 @@ const Header = () => {
     <li><Link to='/blog'>Blog</Link></li>
     {user?.email ?
       <>
-        <li><Link to='/services'>My Toys</Link></li>
-        <li><Link to='/services'> Add A Toy</Link></li>
+        <li><Link to='/myToys'>My Toys</Link></li>
+        <li><Link to='/addToy'> Add A Toy</Link></li>
         <li> <button onClick={handelLogout}>Log out</button> </li>
       </>
       :

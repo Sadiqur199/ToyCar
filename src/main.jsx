@@ -15,6 +15,7 @@ import Products from './Component/Pages/Products/Products.jsx';
 import Blog from './Component/Pages/Blog/Blog.jsx';
 import error from '../src/assets/pageerror.webp'
 import Alltoys from './Component/Pages/AllToys/Alltoys.jsx';
+import AddToy from './Component/Pages/AddToy/AddToy.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path:'Alltoys',
         element:<Alltoys></Alltoys>
+      },
+      {
+        path:'addToy',
+        element:<AddToy></AddToy>
       },
       {
         path:'/',

@@ -26,7 +26,7 @@ const GoogleLogin = () => {
     <div>
       <div className="divider">OR</div>
       <div className='text-center'>
-        <button onClick={handelGoogleSignIn} className="btn btn-circle btn-outline">
+        <button onClick={handelGoogleSignIn} className="btn btn-circle bg-warning">
           <FaGoogle></FaGoogle>
         </button>
       </div>
