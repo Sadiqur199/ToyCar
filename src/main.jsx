@@ -13,8 +13,14 @@ import Registation from './Component/Pages/Registation/Registation.jsx';
 import LayOut from './Component/Main/LayOut.jsx';
 import Products from './Component/Pages/Products/Products.jsx';
 import Blog from './Component/Pages/Blog/Blog.jsx';
+import error from '../src/assets/pageerror.webp'
+import Alltoys from './Component/Pages/AllToys/Alltoys.jsx';
 
-const router = createBrowserRouter([  
+const router = createBrowserRouter([
+  {
+    path:'*',
+    element: <div className='ml-48 mt-24 mb-24'><img src={error} alt="" /></div>
+  },  
   {
     path: "/",
     element: <Main></Main>,
@@ -32,9 +38,14 @@ const router = createBrowserRouter([
         element:<Blog></Blog>
       },
       {
+        path:'Alltoys',
+        element:<Alltoys></Alltoys>
+      },
+      {
         path:'/',
         element:<LayOut></LayOut>
       },
+  
 
     ],
     
