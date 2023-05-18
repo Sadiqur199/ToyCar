@@ -6,11 +6,6 @@ import { AuthContext } from '../../../Provider/AuthProvider';
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext)
-  // const handelLogout = () =>{
-  //   logOut()
-  //   .then()
-  //   .catch(error=>console.log(error.message))
-  // }
   const handelLogout = () => {
       logOut()
       .then()
