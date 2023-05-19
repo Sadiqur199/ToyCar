@@ -31,6 +31,9 @@ const AddToy = () => {
 
     .then(res=>res.json())
     .then(data=>{
+      if(data.insertedId){
+        alert('Toy Added SuccessFull')
+      }
       console.log(data)
     })
 

@@ -9,8 +9,11 @@ const Footer = () => {
     <div className='bg-base-200'>
       <footer className="footer p-10 bg-base-200 text-base-content">
         <div>
-          <Link to='/' className=" normal-case text-xl">
+          <Link to='/' className=" normal-case text-xl flex">
             <img className='w-24 h-24' src={carLogo} alt="" />
+            <div>
+              <h1 className='mt-9 font-bold ml-[-10px]'>Car Toys</h1>
+            </div>
           </Link>
           <p>Car Toys Shop.<br />Providing reliable tech since 2023</p>
         </div>

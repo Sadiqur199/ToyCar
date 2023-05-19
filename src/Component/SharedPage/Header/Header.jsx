@@ -39,8 +39,11 @@ const Header = () => {
               {navItems}
             </ul>
           </div>
-          <Link to='/' className=" normal-case text-xl">
+          <Link to='/' className=" normal-case text-xl flex">
             <img className='w-24 h-24' src={carLogo} alt="" />
+            <div className='mt-8 font-bold'>
+              <h1>Car Toys</h1>
+            </div>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -49,11 +52,13 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <img className='mt-2 me-2 rounded' style={{ height: "35px", width: '35px' }} title={user?.displayName} src={user?.photoURL ? user.photoURL : ''} alt="" />
-          :
-          <Link href="#deets" className='mt-1'>
+          <img className='mt-2 me-2 rounded' style={{ height: "35px", width: '35px' }} title={user?.displayName} src={user?.photoURL ? user.photoURL
+           :         
+             <Link href="#deets" className='mt-1'>
             <FaUserCircle style={{ fontSize: '2rem' }} />
-          </Link>
+          </Link> } alt="" />
+          
+
         </div>
       </div>
     </div>

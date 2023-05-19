@@ -16,6 +16,7 @@ import Blog from './Component/Pages/Blog/Blog.jsx';
 import error from '../src/assets/pageerror.webp'
 import Alltoys from './Component/Pages/AllToys/Alltoys.jsx';
 import AddToy from './Component/Pages/AddToy/AddToy.jsx';
+import MyToys from './Component/Pages/MyToys/MyToys.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,11 +41,16 @@ const router = createBrowserRouter([
       },
       {
         path:'Alltoys',
-        element:<Alltoys></Alltoys>
+        element:<Alltoys></Alltoys>,
+        loader:()=>fetch('http://localhost:5000/addToy')
       },
       {
         path:'addToy',
         element:<AddToy></AddToy>
+      },
+      {
+        path:'myToys',
+        element:<MyToys></MyToys>,
       },
       {
         path:'/',
