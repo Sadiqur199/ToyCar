@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const ViewDetails = () => {
   const viewToy = useLoaderData()
-  const { name, email, seller, category, price, details, rating, quantity, picture, cname } = viewToy
+  const { name, email, seller, category, price, rating, quantity, picture, details } = viewToy
   console.log(viewToy)
   return (
     <div className="overflow-x-auto w-full">
@@ -23,6 +23,7 @@ const ViewDetails = () => {
             <th>Rating</th>
             <th>Quantity</th>
             <th>update</th>
+            <th>details</th>
             <th></th>
           </tr>
         </thead>
