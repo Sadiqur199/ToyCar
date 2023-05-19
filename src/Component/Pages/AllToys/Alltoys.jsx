@@ -1,34 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AllToysTable from './AllToysTable';
 
 const Alltoys = () => {
   const allToys = useLoaderData()
 
-  return (
-    <div className="overflow-x-auto w-full">
-    <table className="table w-full">
-        <thead>
-            <tr>
-                <th>Seller Name</th>
-                <th>Toy Name</th>
-                <th>Sub-category</th>
-                <th>Price</th>
-                <th>Available Quantity</th>
-                <th>View Button</th>
-            </tr>
-        </thead>
-        <tbody>
-            {
-                allToys.map(allToy => <AllToysTable
-                    key={allToy._id}
-                    allToy={allToy}
-                ></AllToysTable>)
-            }
-        </tbody>
+  const [Search , setSearch]  = useState('')
 
-    </table>
-</div>
+  // const handelChange = (event)=>{
+  //   event.preventDefault();
+  //   setSearch(event.target.value)
+  
+  // }
+  // console.log(Search)
+
+  // const SearchToy = allToys.filter(ToySearch=>{
+  //   console.log(ToySearch.name)
+  //   ToySearch.name.includes(Search)
+  // })
+
+  //  console.log(SearchToy)
+
+  return (
+    <>
+      <div>
+      <input type="search"  value={Search}  placeholder="Search your toy" className="input input-bordered" />
+      </div>
+      <div className="overflow-x-auto w-full">
+        <table className="table w-full">
+          <thead>
+            <tr>
+              <th>Seller Name</th>
+              <th>Toy Name</th>
+              <th>Sub-category</th>
+              <th>Price</th>
+              <th>Available Quantity</th>
+              <th>View Button</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              allToys.map(allToy => <AllToysTable
+                key={allToy._id}
+                allToy={allToy}
+              ></AllToysTable>)
+            }
+          </tbody>
+
+        </table>
+      </div>
+    </>
 
   );
 };

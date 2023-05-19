@@ -17,6 +17,8 @@ import error from '../src/assets/pageerror.webp'
 import Alltoys from './Component/Pages/AllToys/Alltoys.jsx';
 import AddToy from './Component/Pages/AddToy/AddToy.jsx';
 import MyToys from './Component/Pages/MyToys/MyToys.jsx';
+import ViewDetails from './Component/Pages/ViewDetails/ViewDetails.jsx';
+import PrivateRoute from './Route/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,11 +48,16 @@ const router = createBrowserRouter([
       },
       {
         path:'addToy',
-        element:<AddToy></AddToy>
+        element:<PrivateRoute><AddToy></AddToy></PrivateRoute>
       },
       {
         path:'myToys',
-        element:<MyToys></MyToys>,
+        element:<PrivateRoute><MyToys></MyToys></PrivateRoute>,
+      },
+      {
+        path:'viewdetails/:id',
+        element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
+        loader:({params})=>fetch(`http://localhost:5000/addToy/${params.id}`)
       },
       {
         path:'/',
