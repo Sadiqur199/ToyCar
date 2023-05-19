@@ -1,3 +1,4 @@
+import { stringify } from 'postcss';
 import React from 'react';
 
 const AddToy = () => {
@@ -19,6 +20,19 @@ const AddToy = () => {
 
     const NewAddToy = {name,email,seller,category,price,details,rating,quantity,picture,cname}
     console.log(NewAddToy)
+
+    fetch('http://localhost:5000/addToy',{
+      method:'POST',
+      headers:{
+        'content-type':'application/json'
+      },
+      body:JSON.stringify(NewAddToy)
+    })
+
+    .then(res=>res.json())
+    .then(data=>{
+      console.log(data)
+    })
 
   }
 
