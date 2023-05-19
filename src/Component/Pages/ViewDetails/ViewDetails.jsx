@@ -6,56 +6,21 @@ const ViewDetails = () => {
   const { name, email, seller, category, price, rating, quantity, picture, details } = viewToy
   console.log(viewToy)
   return (
-    <div className="overflow-x-auto w-full">
-      <table className="table w-full">
-        {/* head */}
-        <thead>
-          <tr>
-            <th>
-             <button>Delete</button>
-            </th>
-            <th>Image</th>
-            <th>ToyName</th>
-            <th>Email</th>
-            <th>Seller</th>
-            <th>category</th>
-            <th>Price</th>
-            <th>Rating</th>
-            <th>Quantity</th>
-            <th>update</th>
-            <th>details</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>
-            <button className="btn btn-outline">Delete</button>
-            </th>
-            <td>
-              <div className="flex items-center space-x-3">
-                <div className="avatar">
-                  <div className="mask mask-squircle w-12 h-12">
-                    <img src={picture} alt="Avatar Tailwind CSS Component" />
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td>{name}</td>
-            <td>{email}</td>
-            <td>{seller}</td>
-            <td>{category}</td>
-            <td>${price}</td>
-            <td>{rating}</td>
-            <td>{quantity}</td>
-            <th>
-              <button className="btn btn-outline">Update</button>
-            </th>
-          </tr>
-        </tbody>
- 
-
-      </table>
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row">
+        <img src={picture} className="h-96 w-96 rounded-lg shadow-2xl" />
+        <div>
+          <h1 className="text-5xl font-bold">ToyName:{name}</h1>
+          <h1 className="mt-2">SellerEmail:{email}</h1>
+          <h1 className="mt-2">SellerName:{seller}</h1>
+          <h1 className="mt-2">Category:{category}</h1>
+          <h1 className="mt-2">Price:${price}</h1>
+          <h1 className="mt-2">Rating:{rating}</h1>
+          <h1 className="mt-2">Quantity:{quantity}</h1>
+          <p className="py-6">{details}</p>
+          <button className="btn btn-primary">Get Started</button>
+        </div>
+      </div>
     </div>
   );
 };
