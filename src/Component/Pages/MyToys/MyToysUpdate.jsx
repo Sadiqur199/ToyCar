@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const MyToysUpdate = () => {
@@ -75,6 +75,7 @@ const MyToysUpdate = () => {
           </div>
           <input type="submit" value="Updated Toy" className="btn pl-20 pr-20  mt-5 ml-4"/>
         </form>
+        <Link to='/myToys'><button className='btn btn-outline  mt-10 pl-16 pr-16'>Go back to Your Toy</button></Link>
       </div>
     </div>
   );
