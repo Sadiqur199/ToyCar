@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {
   createBrowserRouter,
+  Link,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
@@ -29,7 +30,10 @@ AOS.init();
 const router = createBrowserRouter([
   {
     path:'*',
-    element: <div className='ml-48 mt-24 mb-24'><img src={error} alt="" /></div>
+    element: <div className='ml-48 mt-24 mb-24'>
+      <Link to="/"><button className='btn btn-outline mb-10'>Back to Home</button></Link>
+      <img src={error} alt="" />
+    </div>
   },  
   {
     path: "/",

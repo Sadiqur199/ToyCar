@@ -18,7 +18,7 @@ const ViewDetails = () => {
           <h1 className="mt-2">Rating:{rating}</h1>
           <h1 className="mt-2">Quantity:{quantity}</h1>
           <p className="py-6">{details}</p>
-          <Link to="/"><button className="btn btn-primary">Back To Home</button></Link>
+          <Link to="/Alltoys"><button className="btn btn-primary">Back To AllToy</button></Link>
         </div>
       </div>
     </div>

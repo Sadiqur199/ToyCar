@@ -6,25 +6,26 @@ const Alltoys = () => {
   const allToys = useLoaderData()
 
   const [Search , setSearch]  = useState('')
+//search button
+  const handelChange = (event)=>{
+    event.preventDefault();
+    setSearch(event.target.value)
+    setToys(Search);
+    setDisplayedToys(Search.slice(0, 20))
+  }
+  console.log(Search)
 
-  // const handelChange = (event)=>{
-  //   event.preventDefault();
-  //   setSearch(event.target.value)
-  
-  // }
-  // console.log(Search)
+  const SearchToy = allToys.filter(ToySearch=>{
+    console.log(ToySearch.name)
+    ToySearch.name.includes(Search)
 
-  // const SearchToy = allToys.filter(ToySearch=>{
-  //   console.log(ToySearch.name)
-  //   ToySearch.name.includes(Search)
-  // })
+  })
 
-  //  console.log(SearchToy)
 
   return (
     <>
       <div>
-      <input type="search"  value={Search}  placeholder="Search your toy" className="input input-bordered" />
+      <input type="text" onChange={handelChange}  value={Search}  placeholder="Search your toy" className="input input-bordered mb-10 mt-10 mr-24 w-1/2" />
       </div>
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
