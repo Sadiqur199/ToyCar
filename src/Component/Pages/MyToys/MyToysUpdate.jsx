@@ -37,8 +37,6 @@ const MyToysUpdate = () => {
   }
   return (
     <div>
-      <h1>Update Data:{name}</h1>
-
       <div className='mb-16 mt-10 ml-52 mr-48'>
         <form onSubmit={handelUpdateToy}>
         <div className="form-control md:w-1/2 ml-4">
