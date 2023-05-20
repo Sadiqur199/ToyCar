@@ -21,6 +21,10 @@ import ViewDetails from './Component/Pages/ViewDetails/ViewDetails.jsx';
 import PrivateRoute from './Route/PrivateRoute.jsx';
 import ProductDetails from './Component/Pages/ProductCard/ProductDetails.jsx';
 import MyToysUpdate from './Component/Pages/MyToys/MyToysUpdate.jsx';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+AOS.init();
+
 
 const router = createBrowserRouter([
   {
@@ -46,12 +50,12 @@ const router = createBrowserRouter([
       {
         path:'Alltoys',
         element:<Alltoys></Alltoys>,
-        loader:()=>fetch('http://localhost:5000/addToy')
+        loader:()=>fetch('https://toy-car-server-nine.vercel.app/addToy')
       },
       {
          path:'productDetails/:id',
          element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-         loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+         loader:({params})=>fetch(`https://toy-car-server-nine.vercel.app/${params.id}`)
       },
       {
         path:'addToy',
@@ -64,12 +68,12 @@ const router = createBrowserRouter([
       {
        path:'updateMyToys/:id',
        element:<MyToysUpdate></MyToysUpdate>,
-       loader:({params})=>fetch(`http://localhost:5000/addToy/${params.id}`)
+       loader:({params})=>fetch(`https://toy-car-server-nine.vercel.app/addToy/${params.id}`)
       },
       {
         path:'viewdetails/:id',
         element:<PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/addToy/${params.id}`)
+        loader:({params})=>fetch(`https://toy-car-server-nine.vercel.app/addToy/${params.id}`)
       },
       {
         path:'/',

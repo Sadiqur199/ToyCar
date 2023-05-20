@@ -10,7 +10,7 @@ const ProductDetails = () => {
       <p className='text-center font-bold text-3xl mt-10 mb-10'>ProductDetails</p>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={Picture} className="h-96 w-96 rounded-lg shadow-2xl" />
+          < img src={Picture} className="h-96 w-96 rounded-lg shadow-2xl" />
           <div className='ml-16'>
             <h1 className="text-5xl font-bold">ToysName:{Name}</h1>
             <h1 className="mt-2">SellerName:{SellerName}</h1>

@@ -13,7 +13,7 @@ const Products = () => {
   const [datas, setDatas] = useState([])
 
   const handelClick = category => {
-    const url = `http://localhost:5000/products?CategoryName=${category}`
+    const url = `https://toy-car-server-nine.vercel.app/products?CategoryName=${category}`
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -21,7 +21,7 @@ const Products = () => {
       })
   }
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://toy-car-server-nine.vercel.app/products')
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -43,7 +43,7 @@ const Products = () => {
           </TabList>
 
           <TabPanel>
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 '>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 '>
               {
                 products.map(product => <ProductCard key={product._id} product={product}></ProductCard>)
               }

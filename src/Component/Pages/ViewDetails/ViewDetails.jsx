@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const ViewDetails = () => {
   const viewToy = useLoaderData()
@@ -18,7 +18,7 @@ const ViewDetails = () => {
           <h1 className="mt-2">Rating:{rating}</h1>
           <h1 className="mt-2">Quantity:{quantity}</h1>
           <p className="py-6">{details}</p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to="/"><button className="btn btn-primary">Back To Home</button></Link>
         </div>
       </div>
     </div>

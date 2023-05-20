@@ -10,7 +10,7 @@ const Banner = () => {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Rev Up the Fun with Car Toys!</h1>
+      <h1 className="mb-5 text-5xl font-bold" data-aos="fade-up">Rev Up the Fun with Car Toys!</h1>
       <p className="mb-5">Explore a world of excitement and imagination with our wide range of car toys! From sleek race cars to rugged off-road vehicles, we have the perfect toys to ignite your child's passion for adventure.</p>
       <button className="btn btn-primary">Read More..</button>
     </div>
