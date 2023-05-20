@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import AllToysTable from './AllToysTable';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const Alltoys = () => {
-  toast('Welcome To All Toys Page!')
   const allToys = useLoaderData()
 
   const [Search , setSearch]  = useState('')

@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       {
          path:'productDetails/:id',
          element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-         loader:({params})=>fetch(`https://toy-car-server-nine.vercel.app/${params.id}`)
+         loader:({params})=>fetch(`https://toy-car-server-nine.vercel.app/products/${params.id}`)
       },
       {
         path:'addToy',

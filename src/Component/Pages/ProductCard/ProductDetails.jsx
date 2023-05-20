@@ -4,7 +4,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 const ProductDetails = () => {
   const productDetails = useLoaderData()
   const{Name,Picture,SellerName,Price,Rating,SubCategoryName,CategoryName,sellerMail,quantity,description} = productDetails
-  // console.log(productDetails)
+  console.log(productDetails)
   return (
     <div>
       <p className='text-center font-bold text-3xl mt-10 mb-10'>ProductDetails</p>

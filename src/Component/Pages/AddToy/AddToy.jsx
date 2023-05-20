@@ -1,12 +1,9 @@
 import { stringify } from 'postcss';
 import React from 'react';
 import UseTitle from '../../../Hook/useTitle';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const AddToy = () => {
   UseTitle('CarToys|AddToy')
- toast('Welcome To Add Toy Page !')
   const addedToy = (event) =>{
     event.preventDefault()
     const form = event.target;
@@ -14,7 +11,7 @@ const AddToy = () => {
     const email = form.email.value;
     const seller = form.seller.value;
     const category = form.category.value;
-    const price = form.price.value;
+    const price = parseInt(form.price.value);
     const details = form.details.value;
     const rating = form.rating.value;
     const quantity = form.quantity.value;
@@ -65,7 +62,7 @@ const AddToy = () => {
                 <span className="label-text font-bold">seller email:</span>
               </label>
               <label className="input-group">
-                <input type="email" name="email" placeholder="seller email" className="input input-bordered w-full" />
+                <input type="email" name="email" placeholder="seller email" required className="input input-bordered w-full" />
               </label>
             </div>
           </div>
@@ -86,7 +83,7 @@ const AddToy = () => {
                 <span className="label-text font-bold">Sub-category :</span>
               </label>
               <label className="input-group">
-                <input type="text" name="category" placeholder="sub-category" className="input input-bordered w-full" />
+                <input type="text" name="category"  placeholder="sub-category" className="input input-bordered w-full" />
               </label>
             </div>
           </div>
@@ -154,7 +151,7 @@ const AddToy = () => {
             </div>
           </div>
 
-          <input type="submit" value="Added-Toy" className="btn btn-block ml-4" />
+          <input type="submit" value="Added-Toy" className="btn btn-block ml-4 mb-5" />
         </form>
       </div>
     </div>

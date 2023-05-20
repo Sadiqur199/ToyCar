@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 const ProductCard = ({ product }) => {
   const { _id,Name, Picture, Price, CategoryName, Rating } = product
   return (
-    <div className="card w-96 bg-slate-100 shadow-xl mt-3" data-aos="fade-up">
-      <figure className="px-10 pt-10">
+    <div className="card w-74 gap-5 bg-slate-100 shadow-xl mt-3" data-aos="fade-up">
+      <figure className="px-8 pt-8">
         <img src={Picture} alt="" className="rounded h-[200px]" />
       </figure>
       <div className="card-body">
