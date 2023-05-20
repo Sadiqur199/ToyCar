@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [Error , setError] = useState('')
-  const [success,setSuccess] = useState('')
   const {singIn} = useContext(AuthContext)
   const navigate = useNavigate()
   const location = useLocation()
@@ -25,13 +24,12 @@ const Login = () => {
     const form = event.target
     const email = form.email.value
     const password = form.password.value
-    toast('Your Login SuccessFull',<FaGrinBeam/>)
+    toast('Your Login SuccessFull !')
     singIn(email, password)
       .then(result => {
         const user = result.user
         console.log(user)
         navigate(from, { replace: true })
-        setSuccess('Your Login SuccessFull',<FaGrinBeam/>)
         
       })
       .catch(error => {
@@ -46,7 +44,6 @@ const Login = () => {
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body p-16 bg-sky-200 ">
               <div className='text-success'>
-              {success}
               </div>
               <h1 className="text-3xl font-bold text-center mb-3">Login</h1>
               <form onSubmit={handelLogin} >
