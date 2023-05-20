@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 import carLogo from '../../../assets/carlogo.png'
 import { AuthContext } from '../../../Provider/AuthProvider';
+import UseTitle from '../../../Hook/useTitle';
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext)
+  UseTitle('CarToys|Home')
+
   const handelLogout = () => {
       logOut()
       .then()

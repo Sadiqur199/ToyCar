@@ -1,7 +1,9 @@
 import { stringify } from 'postcss';
 import React from 'react';
+import UseTitle from '../../../Hook/useTitle';
 
 const AddToy = () => {
+  UseTitle('CarToys|AddToy')
 
   const addedToy = (event) =>{
     event.preventDefault()

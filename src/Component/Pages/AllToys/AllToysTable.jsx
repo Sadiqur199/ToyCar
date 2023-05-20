@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import UseTitle from '../../../Hook/useTitle';
 
 const AllToysTable = ({ allToy }) => {
   const { _id,name, price, seller, category, quantity } = allToy
 
+  UseTitle('CarToys|AllToys')
   
+
   return (
     <>
 

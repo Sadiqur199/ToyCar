@@ -3,6 +3,10 @@ import {Link, useLocation, useNavigate } from 'react-router-dom';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import { FaGrinBeam } from 'react-icons/fa';
+import UseTitle from '../../../Hook/useTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Login = () => {
   const [Error , setError] = useState('')
@@ -11,6 +15,9 @@ const Login = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const from = location.state?.from?.pathname || '/'
+  UseTitle('CarToys|Login')
+
+
 
 
   const handelLogin = (event) => {
@@ -18,14 +25,14 @@ const Login = () => {
     const form = event.target
     const email = form.email.value
     const password = form.password.value
+    toast('Your Login SuccessFull',<FaGrinBeam/>)
     singIn(email, password)
       .then(result => {
         const user = result.user
-
         console.log(user)
         navigate(from, { replace: true })
         setSuccess('Your Login SuccessFull',<FaGrinBeam/>)
-
+        
       })
       .catch(error => {
         setError(error.message)
