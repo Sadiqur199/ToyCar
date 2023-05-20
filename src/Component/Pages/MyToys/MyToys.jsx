@@ -2,12 +2,14 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import MyToyDetail from './MyToyDetail';
 import UseTitle from '../../../Hook/useTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MyToys = () => {
   const {user} = useContext(AuthContext)
   const [myToys, setMyToys] = useState([])
   UseTitle('CarToys|MyToy')
-
+ toast('Welcome TO My Toy Page')
  
   const url = `https://toy-car-server-nine.vercel.app/addToy?email=${user?.email}`
   useEffect(()=>{

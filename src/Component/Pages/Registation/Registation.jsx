@@ -4,14 +4,17 @@ import { AuthContext } from '../../../Provider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaGrinBeam } from 'react-icons/fa';
 import { updateProfile } from 'firebase/auth';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import UseTitle from '../../../Hook/useTitle';
 
 const Registation = () => {
   const {createUser} = useContext(AuthContext)
   const [Error , setError] = useState('')
-  const [success,setSuccess] = useState('')
   const navigate = useNavigate()
   const location = useLocation()
   const from = location.state?.from?.pathname || '/'
+  UseTitle('CarToys|Registation')
 
 
   const handelSingUp = (event) =>{
@@ -21,12 +24,12 @@ const Registation = () => {
     const photo = form.photo.value
     const email = form.email.value
     const password = form.password.value
+    toast('Your Registation SuccessFull !')
     createUser(email,password)
     .then(result=>{
       const user = result.user
       console.log(user)
       navigate(from, { replace: true })
-      setSuccess('Registation Success',<FaGrinBeam/>)
       updateCurrentUser(user,name,photo)
     })
     .catch(error=>{
@@ -50,7 +53,6 @@ const Registation = () => {
       <div className="hero-content flex-col lg:flex-row">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body p-16 bg-sky-200">
-            {success}
             <h1 className="text-3xl font-bold text-center mb-3">SingUp</h1>
             <form onSubmit={handelSingUp} >
               <div className="form-control">

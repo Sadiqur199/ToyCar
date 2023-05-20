@@ -1,8 +1,12 @@
 import React from 'react';
 import UseTitle from '../../../Hook/useTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Blog = () => {
   UseTitle('CarToys|BlogPage')
+  toast('Welcome To Blog Page!')
+
 
   return (
     <div>

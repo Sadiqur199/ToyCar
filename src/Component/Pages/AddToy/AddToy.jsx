@@ -1,10 +1,12 @@
 import { stringify } from 'postcss';
 import React from 'react';
 import UseTitle from '../../../Hook/useTitle';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddToy = () => {
   UseTitle('CarToys|AddToy')
-
+ toast('Welcome To Add Toy Page !')
   const addedToy = (event) =>{
     event.preventDefault()
     const form = event.target;

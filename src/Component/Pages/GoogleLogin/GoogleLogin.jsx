@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const GoogleLogin = () => {
 
@@ -13,6 +14,7 @@ const GoogleLogin = () => {
 
 
   const handelGoogleSignIn = () => {
+    toast('Your GoogleLogin SuccessFull !')
     googleSignIn()
       .then(result => {
         const user = result.user
