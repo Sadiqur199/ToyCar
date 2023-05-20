@@ -65,7 +65,7 @@ const Login = () => {
                 {Error}
                 </div>
               </form>
-              <p className='my-4 text-center'>New to car doctor? <Link className='text-orange-600 font-bold ml-1' to='/registation'>Sing Up!</Link></p>
+              <p className='my-4 text-center'>New Car Toys? <Link className='text-orange-600 font-bold ml-1' to='/registation'>Sing Up!</Link></p>
               <GoogleLogin></GoogleLogin>
             </div>
           </div>

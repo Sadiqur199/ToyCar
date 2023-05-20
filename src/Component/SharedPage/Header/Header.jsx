@@ -54,7 +54,7 @@ const Header = () => {
         <div className="navbar-end">
           <img className='mt-2 me-2 rounded' style={{ height: "35px", width: '35px' }} title={user?.displayName} src={user?.photoURL ? user.photoURL
            :         
-             <Link href="#deets" className='mt-1'>
+             <Link href="" className='mt-1'>
             <FaUserCircle style={{ fontSize: '2rem' }} />
           </Link> } alt="" />
           
