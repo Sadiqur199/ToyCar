@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import { AuthContext } from '../../../Provider/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const ProductCard = ({ product }) => {
   const { _id,Name, Picture, Price, CategoryName, Rating } = product
+  const {user} = useContext(AuthContext)
   return (
     <div className="card w-74 gap-5 bg-slate-100 shadow-xl mt-3" data-aos="fade-up">
       <figure className="px-8 pt-8">

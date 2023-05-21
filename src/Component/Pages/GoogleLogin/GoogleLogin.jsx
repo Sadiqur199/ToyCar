@@ -18,8 +18,8 @@ const GoogleLogin = () => {
       .then(result => {
         const user = result.user
         navigate(from,{replace:true})
+        toast('Your GoogleLogin SuccessFull !')
       })
-      toast('Your GoogleLogin SuccessFull !')
       .catch(error => console.log(error.message))
   }
 
