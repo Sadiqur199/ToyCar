@@ -46,7 +46,7 @@ const AddToy = () => {
       <div>
         <form onSubmit={addedToy}  className=" text-center">
 
-          {/* name & seller email*/}
+          {/* Toy name & seller email*/}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
@@ -88,7 +88,7 @@ const AddToy = () => {
             </div>
           </div>
 
-          {/* Category & Details row*/}
+          {/* Price & Details row*/}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
@@ -130,7 +130,7 @@ const AddToy = () => {
             </div>
           </div>
 
-          {/* description and picture */}
+          {/* categoryName and picture */}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
