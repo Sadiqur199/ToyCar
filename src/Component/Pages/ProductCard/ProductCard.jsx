@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="card w-74 gap-5 bg-slate-100 shadow-xl mt-3" data-aos="fade-up">
       <figure className="px-8 pt-8">
-        <img src={Picture} alt="" className="rounded h-[200px]" />
+        <img src={Picture} alt="" className="rounded h-[140px]" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">Name:{Name}</h2>

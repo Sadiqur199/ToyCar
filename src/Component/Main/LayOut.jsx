@@ -13,8 +13,8 @@ const LayOut = () => {
   return (
     <div>
       <Banner></Banner>
-      <Products></Products>
       <Gallery></Gallery>
+      <Products></Products>
       <Client></Client>
       <Delevery></Delevery>
     </div>
