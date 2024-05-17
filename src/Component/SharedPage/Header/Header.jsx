@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
-import carLogo from '../../../assets/carlogo.png'
+import carLogo from '../../../assets/image-removebg-preview (7).png'
 import { AuthContext } from '../../../Provider/AuthProvider';
 import UseTitle from '../../../Hook/useTitle';
 
@@ -31,8 +31,8 @@ const Header = () => {
     }
   </>
   return (
-    <div>
-      <div className="navbar bg-slate-300 h-20 mb-4">
+    <div className=''>
+      <div className="navbar bg-slate-300 h-20">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,10 +43,7 @@ const Header = () => {
             </ul>
           </div>
           <Link to='/' className=" normal-case text-xl flex">
-            <img className='w-24 h-24' src={carLogo} alt="" />
-            <div className='mt-8 font-bold'>
-              <h1>Car Toys</h1>
-            </div>
+            <img className='w-[150px] h-[150px] mt-5' src={carLogo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
