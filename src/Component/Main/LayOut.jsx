@@ -8,6 +8,7 @@ import Products from '../Pages/Products/Products';
 import Gallery from '../Pages/Gallery/Gallery';
 import Client from '../Pages/Client/Client';
 import Delevery from '../Pages/Delevery/Delevery';
+import ToyBuildingTips from '../ToyBuildingTips/ToyBuildingTips';
 
 const LayOut = () => {
   return (
@@ -15,6 +16,7 @@ const LayOut = () => {
       <Banner></Banner>
       <Gallery></Gallery>
       <Products></Products>
+      <ToyBuildingTips></ToyBuildingTips>
       <Client></Client>
       <Delevery></Delevery>
     </div>

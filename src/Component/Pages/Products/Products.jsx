@@ -36,6 +36,7 @@ const Products = () => {
           <TabList>
             <div className='text-center  bg-slate-100 font-bold text-[#74BEF6]'>
               <Tab>All Products</Tab>
+              <Tab onClick={() => handelClick('Teddy Bare')}>Classic Toy</Tab>
               <Tab onClick={() => handelClick('Classic Cars')}>Classic Cars</Tab>
               <Tab onClick={() => handelClick('Sports Cars')}>Sports Cars</Tab>
               <Tab onClick={() => handelClick('Emergency Vehicle')}>Emergency Vehicle</Tab>

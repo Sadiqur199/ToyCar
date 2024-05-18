@@ -12,14 +12,14 @@ const AddToy = () => {
     const seller = form.seller.value;
     const category = form.category.value;
     const price = parseInt(form.price.value);
-    const details = form.details.value;
+    const description = form.description.value;
     const rating = form.rating.value;
     const quantity = form.quantity.value;
-    const picture = form.picture.value;
-    const cname = form.cname.value;
-    // console.log(name,email,seller,category,price,details,rating,quantity,picture,cname)
+    const Picture = form.Picture.value;
+    const CategoryName = form.CategoryName.value;
+    // console.log(name,email,seller,category,price,description,rating,quantity,picture,cname)
 
-    const NewAddToy = {name,email,seller,category,price,details,rating,quantity,picture,cname}
+    const NewAddToy = {name,email,seller,category,price,description,rating,quantity,Picture,CategoryName}
     console.log(NewAddToy)
 
     fetch('https://toy-car-server-nine.vercel.app/addToy',{
@@ -88,7 +88,7 @@ const AddToy = () => {
             </div>
           </div>
 
-          {/* Price & Details row*/}
+          {/* Price & description row*/}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
@@ -101,10 +101,10 @@ const AddToy = () => {
 
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
-                <span className="label-text font-bold">Details:</span>
+                <span className="label-text font-bold">description:</span>
               </label>
               <label className="input-group">
-                <input type="text" name="details" placeholder="Toy Details" className="input input-bordered w-full" />
+                <input type="text" name="description" placeholder="Toy description" className="input input-bordered w-full" />
               </label>
             </div>
           </div>
@@ -137,7 +137,7 @@ const AddToy = () => {
                 <span className="label-text font-bold">CategoryName:</span>
               </label>
               <label className="input-group">
-                <input type="text" name="cname" placeholder="Main Category Name" className="input input-bordered w-full" />
+                <input type="text" name="CategoryName" placeholder="Main Category Name" className="input input-bordered w-full" />
               </label>
             </div>
 
@@ -146,7 +146,7 @@ const AddToy = () => {
                 <span className="label-text font-bold">Picture URL::</span>
               </label>
               <label className="input-group">
-                <input type="text" name="picture" placeholder="toy Picture " className="input input-bordered w-full" />
+                <input type="text" name="Picture" placeholder="toy Picture " className="input input-bordered w-full" />
               </label>
             </div>
           </div>
