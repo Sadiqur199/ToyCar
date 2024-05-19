@@ -61,7 +61,7 @@ const AboutUs = () => {
         </h1>
         <div style={{position: 'relative', height: 0, overflow: 'hidden', maxWidth: '100%', paddingBottom: '56.25%'}}>
   <iframe
-    src="https://www.youtube.com/embed/2yqz9zgoC-U"
+    src="https://www.youtube.com/watch?v=TKMlyjNSedc"
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
     frameBorder="0"
     allowFullScreen
