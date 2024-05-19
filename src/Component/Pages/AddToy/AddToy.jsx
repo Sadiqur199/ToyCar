@@ -41,9 +41,9 @@ const AddToy = () => {
   }
 
   return (
-    <div className='bg-slate-300 pt-10'>
+    <div className='bg-slate-300 pt-10 '>
       <h1 className='text-center font-bold text-3xl pt-5 mb-5'>Add The Your Toy</h1>
-      <div>
+      <div className=''>
         <form onSubmit={addedToy}  className=" text-center">
 
           {/* Toy name & seller email*/}

@@ -128,6 +128,9 @@ const AboutUs = () => {
           ></iframe>
         </div>
       </div>
+      <div>
+      Frequently Asked Questions
+      </div>
     </div>
   );
 };

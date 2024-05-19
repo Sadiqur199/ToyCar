@@ -37,8 +37,8 @@ const MyToys = () => {
   return (
     <div>
       <h1 className='text-center mt-10 mb-10 font-bold text-3xl'>User Added Toy:{myToys.length}</h1>
-      <div className="overflow-x-auto w-full">
-  <table className="table w-full">
+      <div className="overflow-x-auto w-[100%]">
+  <table className="table w-full ">
     {/* head */}
     <thead>
       <tr>

@@ -36,16 +36,16 @@ const Alltoys = () => {
       <div>
       <input type="text" onChange={handelChange}  value={Search}  placeholder="Search your toy" className="input input-bordered mb-10 mt-10 mr-24 w-1/2" />
       </div>
-      <div className="overflow-x-auto w-full">
-        <table className="table w-full">
+      <div className="overflow-x-auto w-full p-10">
+        <table className="table w-full ">
           <thead>
-            <tr>
-              <th>Seller Name</th>
-              <th>Toy Name</th>
-              <th>Sub-category</th>
-              <th>Price</th>
-              <th>Available Quantity</th>
-              <th>View Button</th>
+            <tr >
+              <th className='bg-[#74C4F7]'>Seller Name</th>
+              <th className='bg-[#74C4F7]'>Toy Name</th>
+              <th className='bg-[#74C4F7]'>Sub-category</th>
+              <th className='bg-[#74C4F7]'>Price</th>
+              <th className='bg-[#74C4F7]'>Available Quantity</th>
+              <th className='bg-[#74C4F7]'>View Button</th>
             </tr>
           </thead>
           <tbody>

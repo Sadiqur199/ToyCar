@@ -4,7 +4,7 @@ import UseTitle from '../../../Hook/useTitle';
 
 
 const AllToysTable = ({ allToy }) => {
-  const { _id,name, price, seller, category, quantity } = allToy
+  const { _id,name, price, seller, category, quantity} = allToy
 
   UseTitle('CarToys|AllToys')
 
@@ -12,13 +12,13 @@ const AllToysTable = ({ allToy }) => {
     <>
 
       <tr>
-        <td>{seller && seller}</td>
+        <td >{seller && seller}</td>
         <td>{name}</td>
         <td>{category}</td>
         <td>${price}</td>
         <td>{quantity}</td>
         <th>
-          <Link to={`/viewdetails/${_id}`}><button htmlFor="my-modal"  className="btn">View Details</button></Link>
+          <Link to={`/viewdetails/${_id}`}><button htmlFor="my-modal"  className="btn border-none text-black  bg-[#74C4F7] hover:bg-[#74C4F7]">View Details</button></Link>
         </th>
       </tr>
     </>
