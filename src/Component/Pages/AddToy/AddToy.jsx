@@ -3,7 +3,7 @@ import React from 'react';
 import UseTitle from '../../../Hook/useTitle';
 
 const AddToy = () => {
-  UseTitle('CarToys|AddToy')
+  UseTitle('Thinker Toys Haven|AddToy')
   const addedToy = (event) =>{
     event.preventDefault()
     const form = event.target;

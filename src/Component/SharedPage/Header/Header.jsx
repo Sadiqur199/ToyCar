@@ -7,7 +7,7 @@ import UseTitle from '../../../Hook/useTitle';
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext)
-  UseTitle('CarToys|Home')
+  UseTitle('Thinker Toys Haven|Home')
 
   const handelLogout = () => {
       logOut()

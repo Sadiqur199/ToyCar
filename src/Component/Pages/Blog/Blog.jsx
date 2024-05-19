@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Blog = () => {
-  UseTitle('CarToys|BlogPage')
+  UseTitle('Thinker Toys Haven|BlogPage')
   toast('Welcome To Blog Page!')
 
 

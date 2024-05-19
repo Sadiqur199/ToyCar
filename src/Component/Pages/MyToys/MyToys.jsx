@@ -6,7 +6,7 @@ import UseTitle from '../../../Hook/useTitle';
 const MyToys = () => {
   const {user} = useContext(AuthContext)
   const [myToys, setMyToys] = useState([])
-  UseTitle('CarToys|MyToy')
+  UseTitle('Thinker Toys Haven|MyToy')
  
   const url = `https://toy-car-server-nine.vercel.app/addToy?email=${user?.email}`
   useEffect(()=>{

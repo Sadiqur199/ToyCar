@@ -21,7 +21,7 @@ const ProductCard = ({ product }) => {
           {Rating}
         </h2>
         <div className="card-actions">
-          <Link to={`/productDetails/${_id}`}><button className="btn btn-primary">View Details</button></Link>
+          <Link to={`/productDetails/${_id}`}><button className="btn text-black bg-[#74C4F7] border-none hover:bg-[#74C4F7]">View Details</button></Link>
         </div>
       </div>
     </div>
