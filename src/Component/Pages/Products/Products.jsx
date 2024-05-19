@@ -39,7 +39,7 @@ const Products = () => {
               <Tab onClick={() => handelClick('Teddy Bare')}>Classic Toy</Tab>
               <Tab onClick={() => handelClick('Classic Cars')}>Classic Cars</Tab>
               <Tab onClick={() => handelClick('Sports Cars')}>Sports Cars</Tab>
-              <Tab onClick={() => handelClick('Emergency Vehicle')}>Emergency Vehicle</Tab>
+              {/* <Tab onClick={() => handelClick('Emergency Vehicle')}>Emergency Vehicle</Tab> */}
             </div>
           </TabList>
 
