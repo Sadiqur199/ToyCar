@@ -18,6 +18,7 @@ const Header = () => {
   const navItems = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/Alltoys'>All Toys</Link></li>
+    <li><Link to='/About'>About Us</Link></li>
     <li><Link to='/blog'>Blog</Link></li>
     {user?.email ?
       <>

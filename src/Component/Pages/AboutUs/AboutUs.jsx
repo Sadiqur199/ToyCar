@@ -1,9 +1,9 @@
 import React from "react";
 import img1 from "../../../assets/pexels-photo-1319572.jpeg";
 
-const Banner = () => {
+const AboutUs = () => {
   return (
-    <div className="mb-9">
+    <div>
       <div
         className="hero min-h-screen "
         style={{ backgroundImage: `url(${img1})` }}
@@ -30,4 +30,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default AboutUs;

@@ -19,7 +19,7 @@ const Client = () => {
             <p className='font-bold'>Status:Web Developer</p>
             <p className='font-bold'>Contact:libanon@gmail.com</p>
             <div className="card-actions">
-              <button className="btn btn-primary">Visit Info</button>
+              <button className="btn border-none text-black bg-[#74C4F7] hover:bg-[#74C4F7]">Visit Info</button>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Client = () => {
             <p className='font-bold'>Status:Graphics Designer</p>
             <p className='font-bold'>Contact:jilibs@gmail.com</p>
             <div className="card-actions">
-              <button className="btn btn-primary">Visit Info</button>
+              <button className="btn border-none text-black bg-[#74C4F7] hover:bg-[#74C4F7]">Visit Info</button>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Client = () => {
             <p className='font-bold'>Status:MERN Developer</p>
             <p className='font-bold'>Contact:amdali@gmail.com</p>
             <div className="card-actions">
-              <button className="btn btn-primary">Visit Info</button>
+              <button className="btn border-none text-black bg-[#74C4F7] hover:bg-[#74C4F7]">Visit Info</button>
             </div>
           </div>
         </div>

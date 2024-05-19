@@ -24,6 +24,7 @@ import ProductDetails from './Component/Pages/ProductCard/ProductDetails.jsx';
 import MyToysUpdate from './Component/Pages/MyToys/MyToysUpdate.jsx';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import AboutUs from './Component/Pages/AboutUs/AboutUs.jsx';
 AOS.init();
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
         path:'/',
         element:<LayOut></LayOut>
       },
+      {
+        path:'/About',
+        element:<AboutUs></AboutUs>
+      }
   
 
     ],

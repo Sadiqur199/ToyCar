@@ -17,8 +17,8 @@ const LayOut = () => {
       <Gallery></Gallery>
       <Products></Products>
       <ToyBuildingTips></ToyBuildingTips>
-      <Client></Client>
       <Delevery></Delevery>
+      <Client></Client>
     </div>
   );
 };
