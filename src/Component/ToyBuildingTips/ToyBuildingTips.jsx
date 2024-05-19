@@ -32,12 +32,12 @@ const ToyBuildingTips = () => {
       <div className=' bg-[#c1dcf6] shadow-lg p-7 rounded'>
         <h2 className='font-bold text-2xl mb-3'>Add Creative Details</h2>
         <hr className='mb-3 text-gray-500'/>
-        <p className='text-justify'>Add distinctive and imaginative elements to your Lego projects, like personalised decals, accessories, or inventive features, to give them a personalised touch.</p>
+        <p className='text-justify'>Add distinctive and imaginative elements to your Thinker Toy Havenprojects, like personalised decals, accessories, or inventive features, to give them a personalised touch.</p>
       </div>
       <div className=' bg-[#c1dcf6] shadow-lg p-7 rounded'>
-        <h2 className='font-bold text-2xl mb-3'>Join Online Lego Communities</h2>
+        <h2 className='font-bold text-2xl mb-3'>Join Online Thinker Toy HavenCommunities</h2>
         <hr className='mb-3 text-gray-500'/>
-        <p className='text-justify'>Make connections with other Lego fans via social media, online forums, or communities to share builds, obtain ideas, and receive inspiration.</p>
+        <p className='text-justify'>Make connections with other Thinker Toy Havenfans via social media, online forums, or communities to share builds, obtain ideas, and receive inspiration.</p>
       </div>
       </div>
     </div>
