@@ -63,5 +63,4 @@ const Alltoys = () => {
     </>
   );
 };
-
 export default Alltoys;
